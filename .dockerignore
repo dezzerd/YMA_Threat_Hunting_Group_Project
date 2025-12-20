@@ -1,0 +1,15 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.git
+.gitignore
+**/.DS_Store
+**/Thumbs.db
+
+# Local artifacts (optional)
+**/*.duckdb
+**/*.rds
+**/*.csv
+
+
