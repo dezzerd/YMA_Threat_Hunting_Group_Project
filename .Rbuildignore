@@ -1,2 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^data-raw$
+^Dockerfile$
+^docker-compose\.yml$
+^README\.md$
