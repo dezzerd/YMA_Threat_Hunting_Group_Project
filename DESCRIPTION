@@ -1,16 +1,36 @@
-Package: Group1
+Package: GroupProject
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Reproducible ETL for DB-IP (IP Geolocation) Data + Shiny Viewer
 Version: 0.1.0
 Authors@R: c(
-    person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
-    )
+    person("Kirill", "Malahiev", role = c("aut", "cre")),
+    person("Daria", "Alexandrova", role = "aut"),
+    person("Sofia", "Yablokova", role = "aut")
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Description: Tools for reproducible downloading, importing, transforming and
+    loading (ETL) of DB-IP "lite" datasets (country/city/ASN, if available)
+    into tidy data frames and/or DuckDB. Includes a small Shiny app for
+    exploring the collected data.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    httr2,
+    readr,
+    dplyr,
+    tibble,
+    stringr,
+    purrr,
+    rlang,
+    DBI,
+    duckdb
+Suggests:
+    shiny,
+    leaflet,
+    ggplot2,
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
