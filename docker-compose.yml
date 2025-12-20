@@ -1,0 +1,15 @@
+services:
+  dbip_viewer:
+    build: .
+    ports:
+      - "3838:3838"
+    # Optional: persist downloaded data across container restarts
+    volumes:
+      - dbip_cache:/root/.cache
+      - dbip_data:/root/.local/share
+
+volumes:
+  dbip_cache:
+  dbip_data:
+
+
